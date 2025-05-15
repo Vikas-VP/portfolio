@@ -1,0 +1,15 @@
+import styled from "styled-components"
+
+export const Container = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  
+  @media (min-width: 640px) {
+    padding: 0 24px;
+  }
+  
+  @media (min-width: 1024px) {
+    padding: 0 32px;
+  }
+`
