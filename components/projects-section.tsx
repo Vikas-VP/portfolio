@@ -12,27 +12,31 @@ const ProjectsContainer = styled.section`
   padding: 80px 0;
 `
 
-const ProjectsGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
-  
-  @media (min-width: 768px) {
-    grid-template-columns: 1fr 1fr;
-  }
+const ProjectsShowcase = styled.div`
+  max-width: 720px;
+  margin: 0 auto;
 `
 
 const ProjectCard = styled(Card)`
-  height: 100%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  border: 1px solid ${({ theme }) => `${theme.primary}25`};
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 35px -10px ${({ theme }) => `${theme.primary}25`};
+    border-color: ${({ theme }) => theme.primary};
+  }
 `
 
 const ProjectImageContainer = styled.div`
   position: relative;
   overflow: hidden;
-  height: 200px;
+  height: 280px;
+  background-color: ${({ theme }) => theme.muted};
   
   img {
     width: 100%;
@@ -41,17 +45,34 @@ const ProjectImageContainer = styled.div`
     transition: transform 0.5s ease;
     
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.04);
     }
   }
 `
 
-const ProjectHeader = styled(CardHeader)``
+const FeaturedBadge = styled.div`
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.primaryForeground};
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+`
+
+const ProjectHeader = styled(CardHeader)`
+  padding: 24px 24px 12px;
+`
 
 const ProjectHeaderContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 8px;
 `
 
 const ProjectDate = styled.div`
@@ -63,7 +84,7 @@ const ProjectDate = styled.div`
 `
 
 const ProjectContent = styled(CardContent)`
-  flex-grow: 1;
+  padding: 0 24px 20px;
 `
 
 const TagsContainer = styled.div`
@@ -80,36 +101,28 @@ const Tag = styled.span`
   border-radius: 9999px;
   font-size: 0.75rem;
   font-weight: 500;
-  background-color: ${({ theme }) => `${theme.primary}10`};
+  background-color: ${({ theme }) => `${theme.primary}15`};
   color: ${({ theme }) => theme.foreground};
-  border: 1px solid ${({ theme }) => theme.border};
+  border: 1px solid ${({ theme }) => `${theme.primary}25`};
 `
 
 const ProjectFooter = styled(CardFooter)`
   display: flex;
-  gap: 12px;
+  gap: 16px;
+  padding: 0 24px 24px;
 `
 
 const projects = [
   {
     title: "Tower of Hanoi",
     description:
-      "An interactive implementation of the classic Tower of Hanoi puzzle game with an auto-solver feature, move counter, and timer. Built with React and styled-components.",
+      "An interactive implementation of the classic Tower of Hanoi puzzle game with an auto-solver algorithm, move counter, and timer. Built with React and styled-components.",
     startDate: "03/01/23",
     endDate: "03/15/23",
-    tags: ["React", "JavaScript", "Styled Components", "Game Development"],
+    tags: ["React", "JavaScript", "Styled Components", "Game Development", "Algorithm Solver"],
     liveUrl: "https://tower-of-hanoi-vikasvps-projects.vercel.app/",
+    githubUrl: "https://github.com/Vikas-VP/Tower-of-Hanoi",
     image: "/tower-of-hanoi.jpeg",
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "A responsive personal portfolio website showcasing my skills, experience, and projects. Built with Next.js and styled-components.",
-    startDate: "05/01/23",
-    endDate: "05/15/23",
-    tags: ["Next.js", "React", "Styled Components", "Framer Motion"],
-    githubUrl: "https://github.com/Vikas-VP/portfolio",
-    image: "/placeholder-l6m2r.png",
   },
 ]
 
@@ -124,25 +137,26 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           style={{ textAlign: "center", marginBottom: "48px" }}
         >
-          <SectionTitle>Projects</SectionTitle>
+          <SectionTitle>Featured Project</SectionTitle>
         </motion.div>
 
-        <ProjectsGrid>
-          {projects.map((project, index) => (
+        <ProjectsShowcase>
+          {projects.map((project) => (
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
+              transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
               <ProjectCard>
                 <ProjectImageContainer>
+                  <FeaturedBadge>Spotlight</FeaturedBadge>
                   <img src={project.image || "/placeholder.svg"} alt={project.title} />
                 </ProjectImageContainer>
                 <ProjectHeader>
                   <ProjectHeaderContent>
-                    <CardTitle>{project.title}</CardTitle>
+                    <CardTitle style={{ fontSize: "1.5rem" }}>{project.title}</CardTitle>
                     <ProjectDate>
                       <CalendarIcon size={16} />
                       <span>
@@ -150,7 +164,9 @@ export function ProjectsSection() {
                       </span>
                     </ProjectDate>
                   </ProjectHeaderContent>
-                  <CardDescription>{project.description}</CardDescription>
+                  <CardDescription style={{ fontSize: "0.95rem", lineHeight: "1.6" }}>
+                    {project.description}
+                  </CardDescription>
                 </ProjectHeader>
                 <ProjectContent>
                   <TagsContainer>
@@ -183,7 +199,7 @@ export function ProjectsSection() {
               </ProjectCard>
             </motion.div>
           ))}
-        </ProjectsGrid>
+        </ProjectsShowcase>
       </Container>
     </ProjectsContainer>
   )

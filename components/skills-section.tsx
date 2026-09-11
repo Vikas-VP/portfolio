@@ -122,18 +122,20 @@ const AchievementDescription = styled.p`
 const skills = [
   { name: "React", level: 95 },
   { name: "Next.js", level: 90 },
+  { name: "TypeScript", level: 90 },
   { name: "JavaScript", level: 95 },
-  { name: "TypeScript", level: 85 },
+  { name: "Node.js", level: 85 },
+  { name: "Express.js", level: 85 },
+  { name: "MongoDB", level: 80 },
+  { name: "REST & GraphQL", level: 90 },
+  { name: "Apollo & TanStack Query", level: 85 },
+  { name: "WebSocket & Real-time", level: 85 },
+  { name: "Redux & MobX", level: 85 },
   { name: "HTML/CSS", level: 90 },
-  { name: "GraphQL", level: 80 },
-  { name: "Redux", level: 85 },
-  { name: "MobX", level: 80 },
-  { name: "REST", level: 90 },
-  { name: "SEO", level: 75 },
-  { name: "Test Driven Development", level: 80 },
-  { name: "Unit Testing", level: 85 },
+  { name: "Unit Testing & TDD", level: 85 },
   { name: "Agile", level: 90 },
-  { name: "Caching", level: 85 },
+  { name: "Vite", level: 85 },
+  { name: "SEO & Web Optimization", level: 80 },
 ]
 
 export function SkillsSection() {
@@ -185,10 +187,10 @@ export function SkillsSection() {
               <EducationTitle>Education</EducationTitle>
               <EducationContent>
                 <EducationDetails>
-                  <EducationName>Bachelor of Engineering Electronics And Communication</EducationName>
-                  <EducationSchool>Government Engineering College Hassan</EducationSchool>
+                  <EducationName>Bachelor of Engineering</EducationName>
+                  <EducationSchool>Government Engineering College, Hassan</EducationSchool>
                 </EducationDetails>
-                <EducationDate>July 2019</EducationDate>
+                <EducationDate>2015 - 2019</EducationDate>
               </EducationContent>
             </CardContent>
           </EducationCard>
@@ -206,7 +208,7 @@ export function SkillsSection() {
               <AchievementContent>
                 <AchievementIcon>🏆</AchievementIcon>
                 <AchievementDetails>
-                  <AchievementName>Award for Work Excellence</AchievementName>
+                  <AchievementName>Award for Work Excellence (2023-2024)</AchievementName>
                   <AchievementDescription>
                     Achieved an 'Award for Work Excellence' for outstanding contributions to the project.
                   </AchievementDescription>

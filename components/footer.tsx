@@ -86,7 +86,7 @@ export function Footer() {
             <span>Vikas</span>VP
           </FooterLogo>
           <FooterDescription>
-            Senior Software Engineer specializing in React, Next.js, and modern frontend technologies.
+            Senior Software Engineer specializing in React, Next.js, TypeScript, and full-stack web applications.
           </FooterDescription>
         </div>
 

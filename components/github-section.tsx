@@ -204,7 +204,7 @@ export function GithubSection() {
 
         <GithubHeader>
           <GithubProfile>
-            <Github size={32} color="#14b8a6" />
+            <Github size={32} color="#6366f1" />
             <GithubUsername>Vikas-VP</GithubUsername>
           </GithubProfile>
           <Button

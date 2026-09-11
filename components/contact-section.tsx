@@ -161,7 +161,7 @@ export function ContactSection() {
                     </ContactIconWrapper>
                     <div>
                       <ContactInfoLabel>Location</ContactInfoLabel>
-                      <ContactInfoValue>Bengaluru, India 573201</ContactInfoValue>
+                      <ContactInfoValue>Bengaluru, India</ContactInfoValue>
                     </div>
                   </ContactInfoItem>
 

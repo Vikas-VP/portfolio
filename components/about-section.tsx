@@ -239,10 +239,12 @@ export function AboutSection() {
             <AboutContent>
               <AboutTitle>Personal Summary</AboutTitle>
               <AboutDescription>
-                Dynamic Frontend Engineer with a proven track record at Appstitch Technologies, enhancing API
-                performance and optimizing React applications. Skilled in GraphQL and Agile methodologies, I excel in
-                mentoring teams and driving project success, achieving a 30% reduction in load times and fostering
-                seamless collaboration across departments.
+                Senior Software Engineer with 6 years of progressive experience building enterprise-scale,
+                production-grade web applications, with strong expertise across frontend and backend development.
+                Experienced in developing scalable user interfaces using React, Next.js, and TypeScript, along with
+                building backend services and application functionality using Node.js, Express.js, and MongoDB.
+                Experienced in integrating REST/GraphQL APIs and implementing real-time features. Proven ability to
+                collaborate cross-functionally, mentor engineers, and take ownership of delivering high-impact solutions.
               </AboutDescription>
 
               <InfoGrid>
@@ -256,7 +258,7 @@ export function AboutSection() {
                 </InfoItem>
                 <InfoItem>
                   <MapPin size={20} />
-                  <span>Bengaluru, India 573201</span>
+                  <span>Bengaluru, India</span>
                 </InfoItem>
                 <InfoItem>
                   <Mail size={20} />
@@ -271,9 +273,9 @@ export function AboutSection() {
               <div>
                 <SectionSubtitle>Languages</SectionSubtitle>
                 <TagsContainer>
-                  <Tag>English (Native)</Tag>
-                  <Tag>Hindi (Advanced)</Tag>
                   <Tag>Kannada (Native)</Tag>
+                  <Tag>English (Proficient)</Tag>
+                  <Tag>Hindi (Advanced)</Tag>
                 </TagsContainer>
               </div>
 

@@ -17,10 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>Vikas V P | Frontend Engineer</title>
+        <title>Vikas V P | Senior Software Engineer</title>
         <meta
           name="description"
-          content="Portfolio of Vikas V P, Senior Software Engineer specializing in React, Next.js, and modern frontend technologies"
+          content="Portfolio of Vikas V P, Senior Software Engineer with 6 years of experience building enterprise-scale web applications with React, Next.js, TypeScript, Node.js, and MongoDB."
         />
       </head>
       <body className={inter.className}>

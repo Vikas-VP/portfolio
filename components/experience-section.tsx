@@ -116,41 +116,52 @@ export function ExperienceSection() {
                 <ExperienceHeaderContent>
                   <div>
                     <ExperienceTitle>Senior Software Engineer</ExperienceTitle>
-                    <ExperienceCompany>Appstitch Technologies PVT LTD</ExperienceCompany>
+                    <ExperienceCompany>LTIMindtree (LTM) • Bengaluru, India</ExperienceCompany>
                   </div>
                   <ExperienceDate>
                     <CalendarIcon size={16} />
-                    <span>April 2023 - Current</span>
+                    <span>July 2025 - Present</span>
                   </ExperienceDate>
                 </ExperienceHeaderContent>
                 <ExperienceDescription>
-                  Company Overview: Appstitch is a no/low code product which helps users in building their application
+                  Company Overview: Global technology consulting and digital solutions company
                 </ExperienceDescription>
               </ExperienceHeader>
               <CardContent>
                 <ExperienceList2>
                   <li>
-                    Provided guidance on best practices, mentoring four or more new team members, improving their
-                    onboarding efficiency by 50%, and helping them deliver production-quality code within the first two
-                    months.
+                    Delivered a conversational enterprise platform that streamlined access to business-critical
+                    information, eliminated dependency on Salesforce navigation, and reduced average information
+                    retrieval time by 40–60%, significantly improving day-to-day operational efficiency.
                   </li>
                   <li>
-                    Optimized React app performance by implementing lazy loading, code splitting, and memoization,
-                    reducing initial load time by 30%
+                    Developed supporting dashboard functionality using Node.js, Express.js, and MongoDB to enable
+                    efficient data retrieval, processing, and visualization.
                   </li>
                   <li>
-                    Engaged closely with cross-functional teams, including backend developers and designers, ensuring
-                    seamless collaboration and reducing project delays by 25%, leading to on-time delivery of key
-                    features
+                    Contributed to the development of an automated invoice generation and processing system, replacing
+                    heavily manual workflows and reducing invoice processing effort by 50%+, enabling faster billing
+                    cycles and improved financial operations.
                   </li>
-                  <li>Achieved an 'Award for Work Excellence' for outstanding contributions to the project</li>
+                  <li>
+                    Implemented Sentry for application monitoring and error tracking, improving visibility into
+                    production issues, accelerating troubleshooting, and enabling faster resolution of application
+                    errors.
+                  </li>
+                  <li>
+                    Adopted Agile best practices including user story refinement, backlog grooming, and test-driven
+                    development, leading to a reduction in bug reports and a 30% increase in feature delivery speed.
+                  </li>
                 </ExperienceList2>
                 <TagsContainer>
                   <Tag>React</Tag>
                   <Tag>Next.js</Tag>
-                  <Tag>GraphQL</Tag>
-                  <Tag>TypeScript</Tag>
+                  <Tag>Node.js</Tag>
+                  <Tag>Express.js</Tag>
+                  <Tag>MongoDB</Tag>
+                  <Tag>Sentry</Tag>
                   <Tag>Agile</Tag>
+                  <Tag>TDD</Tag>
                 </TagsContainer>
               </CardContent>
             </ExperienceCard>
@@ -167,43 +178,56 @@ export function ExperienceSection() {
                 <ExperienceHeaderContent>
                   <div>
                     <ExperienceTitle>Frontend Engineer</ExperienceTitle>
-                    <ExperienceCompany>Appstitch Technologies PVT LTD</ExperienceCompany>
+                    <ExperienceCompany>Appstitch Technologies PVT LTD • Bengaluru, India</ExperienceCompany>
                   </div>
                   <ExperienceDate>
                     <CalendarIcon size={16} />
-                    <span>December 2020 - March 2023</span>
+                    <span>December 2020 - June 2025</span>
                   </ExperienceDate>
                 </ExperienceHeaderContent>
                 <ExperienceDescription>
-                  Company Overview: Appstitch is a no/low code product which helps users in building their application
+                  Company Overview: Appstitch is a no/low code platform that empowers users to build and publish applications
                 </ExperienceDescription>
               </ExperienceHeader>
               <CardContent>
                 <ExperienceList2>
                   <li>
-                    Spearheaded the creation of modular React components, reducing development time by 30% and
-                    eliminating 40% of redundant code.
+                    Enabled rapid application delivery by developing a no-code/low-code platform for screen creation,
+                    workflow configuration, external integrations, and marketplace-based app publishing.
                   </li>
                   <li>
-                    Enhanced API performance by implementing efficient GraphQL queries and caching strategies, reducing
-                    load times for data-heavy React pages by 40%, which led to a 15% improvement in user engagement.
+                    Optimized React app performance by implementing lazy loading, code splitting, and memoization,
+                    reducing initial load time.
                   </li>
                   <li>
-                    Improved application state management in React apps by integrating Redux and MobX, resulting in
-                    better data synchronization and a 30% reduction in state-related bugs, contributing to a smoother
-                    user experience.
+                    Implemented efficient data handling strategies using GraphQL querying and caching techniques,
+                    reducing load times for data-heavy pages by 40% and contributing to a 15% improvement in user
+                    engagement.
                   </li>
                   <li>
-                    Implemented Agile best practices such as user story refinement, backlog grooming, and TDD, resulting
-                    in a 20% reduction in bug reports and 30% faster feature rollout
+                    Built real-time features such as notifications and live chat using WebSocket with Nest.js,
+                    improving user interactivity and engagement by 25%.
+                  </li>
+                  <li>
+                    Provided guidance on best practices, mentoring 4+ new team members, improving their onboarding
+                    efficiency by 50%, and helping them deliver production-quality code within the first 2 months.
+                  </li>
+                  <li>
+                    Developed and maintained component, integration, and end-to-end tests to validate application
+                    functionality, backend services, and cross-system workflows, improving test coverage and helping
+                    identify defects early in the development lifecycle.
                   </li>
                 </ExperienceList2>
                 <TagsContainer>
                   <Tag>React</Tag>
+                  <Tag>Next.js</Tag>
+                  <Tag>TypeScript</Tag>
+                  <Tag>GraphQL</Tag>
+                  <Tag>WebSocket</Tag>
+                  <Tag>Nest.js</Tag>
                   <Tag>Redux</Tag>
                   <Tag>MobX</Tag>
-                  <Tag>GraphQL</Tag>
-                  <Tag>TDD</Tag>
+                  <Tag>Unit Testing</Tag>
                 </TagsContainer>
               </CardContent>
             </ExperienceCard>
